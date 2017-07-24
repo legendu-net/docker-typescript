@@ -1,6 +1,6 @@
 FROM dclong/nodejs
 
-RUN sudo npm install -g itypescript
+RUN sudo npm install -g typescript
 
 ADD script.sh /
 
