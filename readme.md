@@ -1,4 +1,4 @@
-# dclong/jupyterlab-ts
+# [dclong/typescript](https://hub.docker.com/r/dclong/typescript/)
 
 JupyterLab with the iTypeScript kernel.
 
@@ -16,14 +16,5 @@ docker run -d \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
     -v $HOME:/jupyter \
-    dclong/jupyterlab-ts
-```
-```
-docker run -d \
-    --log-opt max-size=50m \
-    -p 8888:8888 \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_USER_ID=`id -u` \
-    -v $HOME:/jupyter \
-    dclong/jupyterlab-ts
+    dclong/typescript
 ```
