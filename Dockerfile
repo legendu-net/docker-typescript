@@ -2,6 +2,6 @@ FROM dclong/nodejs
 
 RUN sudo npm install -g typescript
 
-ADD script.sh /
+COPY /scripts/ /scripts/
 
-ENTRYPOINT ["/init.sh"]
+ENTRYPOINT ["/scripts/sys/init.sh"]
